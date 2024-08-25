@@ -46,9 +46,9 @@ const FormSection = () => {
     })
   };
   return (
-    <div className="max-w-6xl mx-auto my-10">
-      <h1 className={`text-[2.5rem] text-center font-medium ${volkhvo.className}`}>Ready to grow with us? <br /> Get started for free Demo, <span className="text-primary-main"> No credit card needed.</span></h1>
-      <div className="grid grid-cols-2 gap-6 my-8 items-center">
+    <div className="max-w-6xl mx-auto md:my-10 my-4 xl:px-0 px-6">
+      <h1 className={`xl:text-5xl md:text-3xl text-2xl  text-center font-medium ${volkhvo.className}`}>Ready to grow with us? <br /> Get started for free Demo, <span className="text-primary-main"> No credit card needed.</span></h1>
+      <div className="grid md:grid-cols-2 gap-6 my-8 items-center">
         <form onSubmit={handleSubmit} className="space-y-6">
         <input
           name="name"
@@ -90,7 +90,7 @@ const FormSection = () => {
         </button>
       </form>
       <div className="h-full w-full">
-        <div className="h-[18vw] w-[80%] relative ">
+        <div className="md:h-[18vw] h-40 w-[80%] relative ">
           <Image src="/Home-Images/08.png" alt="No Preview" fill className="object-contain" />
         </div>
         <div className="grid justify-center space-y-4 mt-5">
@@ -104,7 +104,7 @@ const FormSection = () => {
           </div>
           <div className="flex items-center gap-4">
             <MdOutlineEmail className="text-primary-main text-xl" />
-            <p className="text-[#222222]">digitalqrmenu@igrowmybiz.com</p>
+            <p className="text-[#222222] ">digitalqrmenu@ igrowmybiz.com</p>
           </div>
 
         </div>

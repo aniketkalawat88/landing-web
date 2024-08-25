@@ -30,7 +30,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div id="" className="my-8">
+    <div id="" className="md:my-8">
       <div className="border rounded-lg">
         {faqData.map((item, index) => (
           <div key={index} className="border">
@@ -38,7 +38,7 @@ const FAQ = () => {
               className={(selected === index ? "text-primary-main p-4 cursor-pointer flex justify-between items-center" : " p-4 cursor-pointer flex justify-between items-center")}
               onClick={() => toggle(index)}
             >
-              <h3 className="text-lg font-medium">{item.question}</h3>
+              <h3 className="md:text-lg font-medium">{item.question}</h3>
               <span className="text-2xl">{selected === index ? '- ' : '+'}</span>
             </div>
             <div

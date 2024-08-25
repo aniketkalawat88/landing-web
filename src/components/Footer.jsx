@@ -13,10 +13,10 @@ const Footer = () => {
     <footer class="bg-[#12141D]">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
-                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                    <img src="/Home-Images/logo.png" class="h-8" alt="Flowbite Logo" />
+                <a href="#" class="flex items-center max-sm:justify-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/Home-Images/logo.png" class="md:h-8 h-4" alt="Flowbite Logo" />
                 </a>
-                <ul class="flex flex-wrap items-center mb-6  font-normal text-lg text-white sm:mb-0 dark:text-white space-x-10">
+                <ul class="flex flex-wrap items-center mb-6  font-normal text-lg text-white sm:mb-0 dark:text-white md:space-x-10 max-sm:justify-center">
                     {
                         nav?.map((ele,i) => (
                         <li key={i}>

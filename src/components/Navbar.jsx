@@ -48,14 +48,14 @@ const Navbar = () => {
         >
           <img
             src="/Home-Images/logo.png"
-            className="h-6"
+            className="md:h-6 h-4"
             alt="Logo"
           />
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <div
             // type="button"
-            className="block text-white bg-primary-main hover:bg-primary-main/80 focus:ring-4 focus:outline-none focus:ring-primary-main font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-main dark:hover:bg-primary-main/80 dark:focus:ring-primary-main"
+            className="block text-white bg-primary-main hover:bg-primary-main/80 focus:ring-4 focus:outline-none focus:ring-primary-main font-medium rounded-lg text-sm md:px-5 px-2 md:py-2.5 py-1.5 text-center dark:bg-primary-main dark:hover:bg-primary-main/80 dark:focus:ring-primary-main"
           >
             <FormPopup name="Sign up, It’s Free" />
             

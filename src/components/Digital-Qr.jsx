@@ -7,30 +7,30 @@ import PeopleSay from './People-say'
 const DigitalQr = () => {
   return (
     <div id="benefits" className="py-10 max-w-7xl mx-auto">
-       <h1 className={`text-5xl font-bold text-center max-w-5xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> <br /> menu features</h1>
-       <div className="grid grid-cols-2">
+       <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold text-center max-w-5xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> <br /> menu features</h1>
+       <div className="grid md:grid-cols-2 max-md:">
             <div>
-                <div className="h-[42rem] relative scale-110">
+                <div className="md:h-[42rem] h-[10rem] relative md:scale-110">
                     <Image src="/Home-Images/06.png" alt="No Preview" fill className="object-contain" />
                 </div>
             </div>
-            <div className="grid gap-10 my-10">
+            <div className="grid md:gap-10 sm:gap-6 gap-4 my-10 xl:px-0 px-6">
                 <div>
-                    <li className="text-3xl font-semibold text-[#263238]">Improve the Customer Experience</li>
-                    <p className="text-xl text-[#666666] mt-4">With QR code menus that offer ordering capabilities, guests can order as soon as they’re seated.</p>
+                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Improve the Customer Experience</li>
+                    <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">With QR code menus that offer ordering capabilities, guests can order as soon as they’re seated.</p>
                 </div>
                 <div>
-                    <li className="text-3xl font-semibold text-[#263238]">Increase Revenue</li>
-                    <p className="text-xl text-[#666666] mt-4">QR code menus offer excellent upselling and cross-selling opportunities.
+                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Increase Revenue</li>
+                    <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">QR code menus offer excellent upselling and cross-selling opportunities.
                     </p>
                 </div>
                 <div>
-                    <li className="text-3xl font-semibold text-[#263238]">Save money on printing costs</li>
-                    <p className="text-xl text-[#666666] mt-4">Digital QR menus are more cost-effective than print menus. Changes can be made instantly without additional printing costs.</p>
+                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Save money on printing costs</li>
+                    <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">Digital QR menus are more cost-effective than print menus. Changes can be made instantly without additional printing costs.</p>
                 </div>  
                 <div>
-                    <li className="text-3xl font-semibold text-[#263238]">Build a community!</li>
-                    <p className="text-xl text-[#666666] mt-4">Collect valuable data from WhatsApp and supercharge your Sales by sending offers on WhatsApp.
+                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Build a community!</li>
+                    <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">Collect valuable data from WhatsApp and supercharge your Sales by sending offers on WhatsApp.
                     </p>
                 </div>
                 <div>
@@ -40,46 +40,46 @@ const DigitalQr = () => {
             </div>
        </div>
        <PeopleSay />
-        <div className="my-10">
-            <h1 className={`text-5xl font-bold ${volkhvo.className}`}>Ready to <span className="text-primary-main"> Level up</span> in just a minutes?</h1>
-                <div className="grid grid-cols-3 gap-8 mt-12">
+        <div className="md:my-10 my-4 xl:px-0 px-6">
+            <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold ${volkhvo.className}`}>Ready to <span className="text-primary-main"> Level up</span> in just a minutes?</h1>
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-12">
                     <div className="">
-                        <div className="relative h-72">
+                        <div className="relative md:h-72 h-44">
                             <Image src="/Home-Images/07.png" alt="" fill className="object-cover rounded-md" />
                         </div>
                         <div className="text-center relative">
                             <div className="absolute w-full -top-4">
                                 <p className="bg-primary-main text-white h-10 w-10 flex items-center justify-center text-xl rounded-full mx-auto">1</p>
                             </div>
-                            <h1 className={`text-center text-primary-main text-2xl font-bold pt-6 drop-shadow-md  ${Plusjakartasans.className}`}>Sign Up for Free</h1>
+                            <h1 className={`text-center text-primary-main md:text-2xl text-xl font-bold pt-6 drop-shadow-md  ${Plusjakartasans.className}`}>Sign Up for Free</h1>
                         </div>
                     </div>
                     <div className="">
-                        <div className="relative h-72">
+                        <div className="relative md:h-72 h-44">
                             <Image src="/Home-Images/18.png" alt="" fill className="object-cover rounded-md" />
                         </div>
                         <div className="text-center relative">
                             <div className="absolute w-full -top-4">
                                 <p className="bg-primary-main text-white h-10 w-10 flex items-center justify-center text-xl rounded-full mx-auto">2</p>
                             </div>
-                            <h1 className={`text-center text-primary-main text-2xl font-bold pt-6 drop-shadow-md  ${Plusjakartasans.className}`}>Send us your existing menu</h1>
+                            <h1 className={`text-center text-primary-main md:text-2xl text-xl font-bold pt-6 drop-shadow-md  ${Plusjakartasans.className}`}>Send us your existing menu</h1>
                         </div>
                     </div>
                     <div className="">
-                        <div className="relative h-72">
+                        <div className="relative md:h-72 h-44">
                             <Image src="/Home-Images/19.png" alt="" fill className="object-cover rounded-md" />
                         </div>
                         <div className="text-center relative">
                             <div className="absolute w-full -top-4">
                                 <p className="bg-primary-main text-white h-10 w-10 flex items-center justify-center text-xl rounded-full mx-auto">3</p>
                             </div>
-                            <h1 className={`text-center text-primary-main text-2xl font-bold pt-6 drop-shadow-md  ${Plusjakartasans.className}`}>You will receive a QR code</h1>
+                            <h1 className={`text-center text-primary-main md:text-2xl text-xl font-bold pt-6 drop-shadow-md  ${Plusjakartasans.className}`}>You will receive a QR code</h1>
                         </div>
                     </div>
                 </div>
        </div>
-       <section id="faq" className="py-10">
-            <h1 className={`text-5xl font-bold ${volkhvo.className}`}>Frequently  <span className="text-primary-main"> asked question</span></h1>
+       <section id="faq" className="md:py-10 py-4 md:px-0 px-6">
+            <h1 className={`xl:text-5xl md:text-3xl text-2xl  font-bold ${volkhvo.className}`}>Frequently  <span className="text-primary-main"> asked question</span></h1>
         <FAQ />
        </section>
     </div>

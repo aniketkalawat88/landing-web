@@ -18,15 +18,15 @@ import Image from 'next/image';
 export default function PeopleSay() {
   const rev = ["","","","","",""]
   return (
-    <div id="review" className="relative w-full h-full max-w-6xl mx-auto py-10">
-    <div className="grid grid-cols-2 w-full h-full">
+    <div id="review" className="relative w-full h-full max-w-6xl mx-auto md:py-10 py-6  xl:px-0 px-6">
+    <div className="grid md:grid-cols-2 grid-cols-1 w-full h-full">
         <div>
         <div>
-            <h1 className={`text-5xl font-bold ${volkhvo.className}`}>What people say<span className="text-primary-main"><br /> about us. </span></h1>
+            <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold ${volkhvo.className}`}>What people say<span className="text-primary-main"><br /> about us. </span></h1>
             <p className="text-[#666666] max-w-sm mt-6">Our Clients send us bunch of smilies with our services and we love them.</p>
             <div>
-            <button className='HomeSlidePrev text-primaryMain absolute bottom-2 -translate-y-1/2  z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowLeft /></button>
-            <button className='HomeSlideNext text-primaryMain absolute bottom-2 -translate-y-1/2 left-14 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowRight /></button> 
+              <button className='HomeSlidePrev text-primaryMain absolute bottom-2 -translate-y-1/2  z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowLeft /></button>
+              <button className='HomeSlideNext text-primaryMain absolute bottom-2 -translate-y-1/2 md:left-14 left-20 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowRight /></button> 
             </div>
           </div>
         </div>
@@ -47,11 +47,11 @@ export default function PeopleSay() {
         {
           rev?.map((ele, i )=> (
         <SwiperSlide key={i} className="p-6  grid items-center h-full w-full">
-          <div className="h-16 w-16 relative">
+          <div className="md:h-16 md:w-16 h-12 w-12 relative">
             <Image src={"/Home-Images/07.png"} alt="No Preview" fill className="object-cover rounded-full" />
           </div>
-          <p className="text-[#666] mt-2">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-          <p className="text-lg font-medium mt-4">Mike taylor</p>
+          <p className="text-[#666] md:text-base text-sm mt-2">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+          <p className="md:text-lg text-base font-medium md:mt-4 mt-2">Mike taylor</p>
           <p className="text-sm font-medium text-[#666666] my-1">Lahore, Pakistan</p>
         </SwiperSlide>
 
