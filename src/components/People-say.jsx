@@ -16,7 +16,33 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import Image from 'next/image';
 
 export default function PeopleSay() {
-  const rev = ["","","","","",""]
+  const rev = [
+    {
+      name:'Rajesh, Cafe Owner.',
+      img:'01.png',
+      data:'Love how easy it is to update our menu! Customers in Mumbai are loving the digital experience. Thanks, Smart Digital QR Menu!'
+    },
+    {
+      name:' Anjali, Restaurant Manager.',
+      img:'03.png',
+      data:'Switched to Smart Digital QR Menu in Pune and it’s been a game-changer! No more reprinting menus. Customers are impressed!'
+    },
+    {
+      name:'Ravi, Bistro Owner.',
+      img:'04.png',
+      data:'We went digital in Bangalore with Smart Digital QR Menu. The real-time updates are fantastic. Our customers can’t stop talking about it!'
+    },
+    {
+      name:'Pooja, Cafe Manager.',
+      img:'06.png',
+      data:'Smart Digital QR Menu made life so much easier in our Delhi cafe. Quick updates and zero hassle. Highly recommend!'
+    },
+    {
+      name:'Sandeep, Restaurant Owner',
+      img:'11.png',
+      data:'Hyderabad customers are loving the interactive digital menu. Smart Digital QR Menu is super efficient and easy to use. Great decision!'
+    },
+  ]
   return (
     <div id="review" className="relative w-full h-full max-w-6xl mx-auto md:py-10 py-6  xl:px-0 px-6">
     <div className="grid md:grid-cols-2 grid-cols-1 w-full h-full">
@@ -48,11 +74,11 @@ export default function PeopleSay() {
           rev?.map((ele, i )=> (
         <SwiperSlide key={i} className="p-6  grid items-center h-full w-full">
           <div className="md:h-16 md:w-16 h-12 w-12 relative">
-            <Image src={"/Home-Images/07.png"} alt="No Preview" fill className="object-cover rounded-full" />
+            <Image src={`/Home-Images/logo/${ele.img}`} alt="No Preview" fill className="object-cover rounded-full" />
           </div>
-          <p className="text-[#666] md:text-base text-sm mt-2">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-          <p className="md:text-lg text-base font-medium md:mt-4 mt-2">Mike taylor</p>
-          <p className="text-sm font-medium text-[#666666] my-1">Lahore, Pakistan</p>
+          <p className="text-[#666] md:text-base text-sm mt-4">“ {ele.data} ”</p>
+          <p className="md:text-lg text-base font-medium md:mt-4 mt-2">{ele.name}</p>
+          <p className="text-sm font-medium text-[#666666]"></p>
         </SwiperSlide>
 
           ))

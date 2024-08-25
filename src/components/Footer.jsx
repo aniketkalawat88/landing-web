@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import React from 'react'
 
 const Footer = () => {
@@ -28,10 +29,10 @@ const Footer = () => {
                 </ul>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-primary-main lg:my-8" />
-            <div>
-
+            <div className="flex justify-between items-center">
+                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright, IgrowMyBiz 2022. All rights reserved.</span>
+                <Link href="Termsandcondition"  className="text-gray-500 hover:underline hover:text-primary-main ">Terms and Condition</Link>
             </div>
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright, Trabook 2022. All rights reserved.</span>
         </div>
     </footer>
   )

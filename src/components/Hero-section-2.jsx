@@ -55,6 +55,11 @@ const HeroSectionTwo = () => {
                 <img src="/Home-Images/logo/06.png" alt="No Preview" className="object-contain h-full w-full" />
                 <img src="/Home-Images/logo/07.png" alt="No Preview" className="object-contain h-full w-full" />
                 <img src="/Home-Images/logo/08.png" alt="No Preview" className="object-contain h-full w-full" />
+                <img src="/Home-Images/logo/09.png" alt="No Preview" className="object-contain h-full w-full" />
+                <img src="/Home-Images/logo/10.png" alt="No Preview" className="object-contain h-full w-full" />
+                <img src="/Home-Images/logo/11.png" alt="No Preview" className="object-contain h-full w-full" />
+                <img src="/Home-Images/logo/12.png" alt="No Preview" className="object-contain h-full w-full" />
+                <img src="/Home-Images/logo/13.png" alt="No Preview" className="object-contain h-full w-full" />
             </div>
             </div>
 
