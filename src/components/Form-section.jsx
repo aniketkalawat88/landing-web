@@ -46,14 +46,14 @@ const FormSection = () => {
     })
   };
   return (
-    <div className="max-w-6xl mx-auto md:my-10 my-4 xl:px-0 px-6">
+    <div className="max-w-7xl mx-auto md:my-10 my-4 xl:px-10 px-6 shadow-[0px_8px_16px_0px_rgba(250,116,54,0.07)] rounded-2xl">
       <h1 className={`xl:text-5xl md:text-3xl text-2xl  text-center font-medium ${volkhvo.className}`}>Ready to grow with us? <br /> Get started for free Demo, <span className="text-primary-main"> No credit card needed.</span></h1>
       <div className="grid md:grid-cols-2 gap-6 my-8 items-center">
         <form onSubmit={handleSubmit} className="space-y-6">
         <input
           name="name"
           placeholder="Name"
-          className="outline-none bg-primary-main/10 w-full p-3.5 rounded"
+          className="outline-none bg-primary-main/5 w-full p-3.5 rounded"
           value={formData.name}
           onChange={handleChange}
           required
@@ -61,7 +61,7 @@ const FormSection = () => {
         <input
           name="restaurant"
           placeholder="Restaurant or Cafe Name"
-          className="outline-none bg-primary-main/10 w-full p-3.5 rounded"
+          className="outline-none bg-primary-main/5 w-full p-3.5 rounded"
           value={formData.restaurant}
           onChange={handleChange}
           required
@@ -69,7 +69,7 @@ const FormSection = () => {
         <input
           name="email"
           placeholder="Email"
-          className="outline-none bg-primary-main/10 w-full p-3.5 rounded"
+          className="outline-none bg-primary-main/5 w-full p-3.5 rounded"
           value={formData.email}
           onChange={handleChange}
           required
@@ -77,7 +77,7 @@ const FormSection = () => {
         <input
           name="phone"
           placeholder="Phone/Mobile"
-          className="outline-none bg-primary-main/10 w-full p-3.5 rounded"
+          className="outline-none bg-primary-main/5 w-full p-3.5 rounded"
           value={formData.phone}
           onChange={handleChange}
           required

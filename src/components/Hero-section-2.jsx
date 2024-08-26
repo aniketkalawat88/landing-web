@@ -103,7 +103,7 @@ const HeroSectionTwo = () => {
 
         </section>
         <section className="bg-primary-main md:w-full w-[90%] text-white md:p-6 p-2 rounded-2xl max-w-6xl mx-auto ">
-            <h1 className={`xl:text-5xl md:text-3xl text-xl  font-medium text-center max-w-5xl mx-auto md:my-10 my-2 ${volkhvo.className}`}>Keep Your Customers happy and build their trust in your restaurant!</h1>
+            <p className={`xl:text-5xl md:text-3xl text-xl  font-medium text-center max-w-5xl mx-auto md:my-10 my-2 ${volkhvo.className}`}>Keep Your Customers happy and build their trust in your restaurant!</p>
             <div className="w-full flex justify-center">
                 <div className="bg-white text-primary-main text-lg font-medium md:py-2.5 py-1.5 px-4 rounded shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)]">
                 <FormPopup name="Get Free Demo" />

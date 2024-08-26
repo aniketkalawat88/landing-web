@@ -65,7 +65,7 @@ const FormPopup = ({name}) => {
           aria-hidden="true"
           className="fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full h-screen bg-white bg-opacity-50"
         >
-          <div className="relative p-4 w-full max-w-md max-h-full bg-white rounded-lg shadow dark:bg-gray-700">
+          <div className="relative p-4 w-full max-w-md max-h-full bg-white rounded-lg shadow dark:bg-secondary-main/90">
             {/* Modal header */}
             <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">

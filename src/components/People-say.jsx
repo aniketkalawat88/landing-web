@@ -44,7 +44,7 @@ export default function PeopleSay() {
     },
   ]
   return (
-    <div id="review" className="relative w-full h-full max-w-6xl mx-auto md:py-10 py-6  xl:px-0 px-6">
+    <div id="review" className="relative w-full h-full max-w-7xl mx-auto md:py-10 py-6  xl:px-10 px-6 bg-[#FEFCFB]">
     <div className="grid md:grid-cols-2 grid-cols-1 w-full h-full">
         <div>
         <div>
@@ -52,7 +52,7 @@ export default function PeopleSay() {
             <p className="text-[#666666] max-w-sm mt-6">Our Clients send us bunch of smilies with our services and we love them.</p>
             <div>
               <button className='HomeSlidePrev text-primaryMain absolute bottom-2 max-md:left-1/3 -translate-y-1/2 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowLeft /></button>
-              <button className='HomeSlideNext text-primaryMain absolute bottom-2 max-md:left-1/2 -translate-y-1/2 md:left-14 left-20 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowRight /></button> 
+              <button className='HomeSlideNext text-primaryMain absolute bottom-2 max-md:left-1/2 -translate-y-1/2 md:left-28 left-20 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowRight /></button> 
             </div>
           </div>
         </div>

@@ -6,7 +6,8 @@ import PeopleSay from './People-say'
 
 const DigitalQr = () => {
   return (
-    <div id="benefits" className="py-10 max-w-7xl mx-auto">
+    <div id="benefits" className="py-10 max-w-7xl mx-auto relative">
+        <div className="h-[50%] w-full bg-primary-main/5 absolute -z-10" style={{filter:'blur(250px)'}} />
        <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold text-center max-w-4xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> menu features</h1>
        <div className="grid md:grid-cols-2">
             <div>

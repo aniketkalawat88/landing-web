@@ -59,7 +59,7 @@ const Navbar = () => {
           <div
             className="block text-white bg-primary-main hover:bg-primary-main/80 focus:ring-4 focus:outline-none focus:ring-primary-main font-medium rounded-lg text-sm md:px-5 px-2 md:py-2.5 py-1.5 text-center dark:bg-primary-main dark:hover:bg-primary-main/80 dark:focus:ring-primary-main"
           >
-            <FormPopup name="Sign up, It’s Free" />            
+            <FormPopup name="Get Free Demo" />            
           </div>
           
         </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
               <li key={i}>
                 <a
                   href={ele.link}
-                  className="block py-2 px-3 text-white bg-primary-main rounded md:bg-transparent md:text-primary-main md:p-0 md:dark:text-secondary-main hover:text-primary-main font-medium"
+                  className="block py-2 px-3 text-white bg-primary-main rounded md:bg-transparent md:text-secondary-main md:p-0 md:dark:text-secondary-main hover:text-primary-main hover:font-medium font-normal"
                   aria-current="page"
                 >
                   {ele.name}
