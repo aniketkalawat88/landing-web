@@ -8,14 +8,14 @@ const DigitalQr = () => {
   return (
     <div id="benefits" className="py-10 max-w-7xl mx-auto relative">
         <div className="h-[50%] w-full bg-primary-main/5 absolute -z-10" style={{filter:'blur(250px)'}} />
-       <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold text-center max-w-4xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> menu features</h1>
+       <h1 className={`xl:text-5xl md:text-3xl text-2xl  sm:px-0 px-1 font-bold text-center max-w-4xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> menu features</h1>
        <div className="grid md:grid-cols-2">
             <div>
-                <div className="md:h-[42rem] h-[10rem] relative md:scale-110">
+                <div className="md:h-[42rem] h-[10rem] relative md:scale-110 my-4">
                     <Image src="/Home-Images/06.png" alt="No Preview" fill className="object-contain" />
                 </div>
             </div>
-            <div className="grid md:gap-10 sm:gap-6 gap-4 my-10 xl:px-0 px-6">
+            <div className="grid md:gap-10 sm:gap-6 gap-4 md:my-10 xl:px-0 px-6">
                 <div>
                     <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Improve the Customer Experience</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">With QR code menus that offer ordering capabilities, guests can order as soon as they’re seated.</p>
