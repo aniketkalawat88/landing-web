@@ -6,7 +6,7 @@ import FormPopup from './FormPopup'
 const DigitalMenu = () => {
   return (
     <div id="processQr" className="">
-        <div className="bg-[#12141D] text-white xl:text-5xl md:text-3xl text-2xl p-8 my-16">
+        <div className="bg-[#12141D] text-white xl:text-5xl md:text-3xl text-2xl p-8 md:my-16 my-6">
             <h1 className={`text-center ${volkhvo.className}`}>How smart digital <span className="text-primary-main"> menu works</span></h1>
             <div className="max-w-6xl mx-auto w-full h-full xl:py-20">
                 <div className="flex items-center gap-10 max-sm:my-4">
@@ -29,7 +29,7 @@ const DigitalMenu = () => {
                         </div>
                         <div>
                             <h3 className={`xl:text-[2.2rem] md:text-3xl text-xl font-bold ${Plusjakartasans.className}`}>Scan QR-CODE</h3>
-                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal md:mt-4 text-center">Guests scan the QR code from  <br />their Android or iOS devices.</p>
+                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal max-w-xs md:mt-4 text-center">Guests scan the QR code from  their Android or iOS devices.</p>
                         </div>
 
                     </div>
@@ -40,8 +40,8 @@ const DigitalMenu = () => {
                             2
                         </div>
                         <div>
-                            <h3 className={`xl:text-[2.2rem] md:text-3xl text-xl font-bold  ${Plusjakartasans.className}`}>Send a message</h3>
-                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal md:mt-4 text-center">They get redirected to WhatsApp <br />and send an auto-fill message.</p>
+                            <h3 className={`xl:text-[2.2rem] md:text-3xl text-xl font-bold text-center ${Plusjakartasans.className}`}>Send a message</h3>
+                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal max-w-sm md:mt-4 text-center">They get redirected to WhatsApp and send an auto-fill message.</p>
                         </div>
 
                     </div>
@@ -78,8 +78,8 @@ const DigitalMenu = () => {
                             3
                         </div>
                         <div>
-                            <h3 className={`xl:text-[2.2rem] md:text-3xl text-xl font-bold ${Plusjakartasans.className}`}>Receive a link</h3>
-                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal md:mt-4 text-center">They get redirected to the<br />  Smart digital menu.</p>
+                            <h3 className={`xl:text-[2.2rem] md:text-3xl text-xl text-center font-bold ${Plusjakartasans.className}`}>Receive a link</h3>
+                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal max-w-xs md:mt-4 text-center">They get redirected to the Smart digital menu.</p>
                         </div>
 
                     </div>
@@ -90,8 +90,8 @@ const DigitalMenu = () => {
                             4
                         </div>
                         <div>
-                            <h3 className={`xl:text-[2.2rem] md:text-3xl text-xl font-bold  ${Plusjakartasans.className}`}>Explore the menu</h3>
-                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal md:mt-4 text-center">They view the menu and order <br /> food.</p>
+                            <h3 className={`xl:text-[2.2rem] md:text-3xl text-xl font-bold text-center ${Plusjakartasans.className}`}>Explore the menu</h3>
+                            <p className="text-[#FFFFFFB2] md:text-xl text-sm font-normal max-w-xs md:mt-4 text-center">They view the menu and order food.</p>
                         </div>
                     </div>
                     <div className="relative">

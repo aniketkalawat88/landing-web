@@ -48,11 +48,11 @@ export default function PeopleSay() {
     <div className="grid md:grid-cols-2 grid-cols-1 w-full h-full">
         <div>
         <div>
-            <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold ${volkhvo.className}`}>What people say<span className="text-primary-main"><br /> about us. </span></h1>
+            <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold max-md:text-center ${volkhvo.className}`}>What people say<span className="text-primary-main"><br /> about us. </span></h1>
             <p className="text-[#666666] max-w-sm mt-6">Our Clients send us bunch of smilies with our services and we love them.</p>
             <div>
-              <button className='HomeSlidePrev text-primaryMain absolute bottom-2 -translate-y-1/2  z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowLeft /></button>
-              <button className='HomeSlideNext text-primaryMain absolute bottom-2 -translate-y-1/2 md:left-14 left-20 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowRight /></button> 
+              <button className='HomeSlidePrev text-primaryMain absolute bottom-2 max-md:left-1/3 -translate-y-1/2 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowLeft /></button>
+              <button className='HomeSlideNext text-primaryMain absolute bottom-2 max-md:left-1/2 -translate-y-1/2 md:left-14 left-20 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowRight /></button> 
             </div>
           </div>
         </div>

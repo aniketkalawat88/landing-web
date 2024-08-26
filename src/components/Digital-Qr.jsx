@@ -7,8 +7,8 @@ import PeopleSay from './People-say'
 const DigitalQr = () => {
   return (
     <div id="benefits" className="py-10 max-w-7xl mx-auto">
-       <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold text-center max-w-5xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> <br /> menu features</h1>
-       <div className="grid md:grid-cols-2 max-md:">
+       <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold text-center max-w-4xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> menu features</h1>
+       <div className="grid md:grid-cols-2">
             <div>
                 <div className="md:h-[42rem] h-[10rem] relative md:scale-110">
                     <Image src="/Home-Images/06.png" alt="No Preview" fill className="object-contain" />
@@ -16,20 +16,20 @@ const DigitalQr = () => {
             </div>
             <div className="grid md:gap-10 sm:gap-6 gap-4 my-10 xl:px-0 px-6">
                 <div>
-                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Improve the Customer Experience</li>
+                    <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Improve the Customer Experience</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">With QR code menus that offer ordering capabilities, guests can order as soon as they’re seated.</p>
                 </div>
                 <div>
-                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Increase Revenue</li>
+                    <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Increase Revenue</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">QR code menus offer excellent upselling and cross-selling opportunities.
                     </p>
                 </div>
                 <div>
-                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Save money on printing costs</li>
+                    <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Save money on printing costs</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">Digital QR menus are more cost-effective than print menus. Changes can be made instantly without additional printing costs.</p>
                 </div>  
                 <div>
-                    <li className="md:text-3xl sm:text-2xl text-base font-semibold text-[#263238]">Build a community!</li>
+                    <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Build a community!</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">Collect valuable data from WhatsApp and supercharge your Sales by sending offers on WhatsApp.
                     </p>
                 </div>
@@ -40,8 +40,8 @@ const DigitalQr = () => {
             </div>
        </div>
        <PeopleSay />
-        <div className="md:my-10 my-4 xl:px-0 px-6">
-            <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold ${volkhvo.className}`}>Ready to <span className="text-primary-main"> Level up</span> in just a minutes?</h1>
+        <div className="md:my-10 my-2 xl:px-0 px-6">
+            <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold  max-md:text-center ${volkhvo.className}`}>Ready to <span className="text-primary-main"> Level up</span> in just a minutes?</h1>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-12">
                     <div className="">
                         <div className="relative md:h-72 h-44">

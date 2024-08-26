@@ -84,7 +84,7 @@ const FormSection = () => {
         />
         <button
           type="submit"
-          className={`bg-primary-main p-2.5 text-white text-xl font-medium px-5 rounded-xl mt-10`}
+          className={`bg-primary-main p-2.5 text-white text-xl font-medium px-5 rounded-xl mt-10 max-md:w-full`}
         >
           Let’s do it!
         </button>
@@ -104,7 +104,7 @@ const FormSection = () => {
           </div>
           <div className="flex items-center gap-4">
             <MdOutlineEmail className="text-primary-main text-xl" />
-            <p className="text-[#222222] ">digitalqrmenu@ igrowmybiz.com</p>
+            <p className="text-[#222222] ">digitalqrmenu@igrowmybiz.com</p>
           </div>
 
         </div>

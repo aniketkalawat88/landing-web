@@ -2,6 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react';
 import FormPopup from './FormPopup';
+import { PiPhoneCallThin } from "react-icons/pi";
+import Link from 'next/link';
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -52,14 +54,14 @@ const Navbar = () => {
             alt="Logo"
           />
         </a>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center gap-4">
+          <Link href="tel:6264755339" className="flex gap-1 text-primary-main items-center font-normal text-sm max-sm:hidden"><PiPhoneCallThin className="text-2xl" /> +91 6264755339</Link>
           <div
-            // type="button"
             className="block text-white bg-primary-main hover:bg-primary-main/80 focus:ring-4 focus:outline-none focus:ring-primary-main font-medium rounded-lg text-sm md:px-5 px-2 md:py-2.5 py-1.5 text-center dark:bg-primary-main dark:hover:bg-primary-main/80 dark:focus:ring-primary-main"
           >
-            <FormPopup name="Sign up, It’s Free" />
-            
+            <FormPopup name="Sign up, It’s Free" />            
           </div>
+          
         </div>
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"

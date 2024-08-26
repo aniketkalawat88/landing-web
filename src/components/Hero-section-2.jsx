@@ -1,9 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import React, { useRef, useState } from 'react';
 import Image from 'next/image'
-import React from 'react'
 import { Poppins } from 'next/font/google'
 import { volkhvo } from '@/styles/font'
 import FormPopup from './FormPopup'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+// import required modules
+import { Navigation, Pagination } from 'swiper/modules';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -13,7 +22,7 @@ const poppins = Poppins({
 const HeroSectionTwo = () => {
   return (
     <div className="w-full">
-        <div className=" md:flex grid gap-4 max-w-6xl mx-auto xl:px-0 px-6">
+        <div className=" md:flex gap-4 max-w-6xl mx-auto xl:px-0 px-6 hidden">
             <div className="md:h-64 h-40 relative md:w-[20vw] w-full rounded-md overflow-hidden shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)]">
                 <Image src="/Home-Images/11.png" alt="No Preview" fill className="object-cover" />
             </div>
@@ -24,22 +33,51 @@ const HeroSectionTwo = () => {
                 <Image src="/Home-Images/13.png" alt="No Preview" fill className="object-cover" />
             </div>
         </div>
+        <div className="md:hidden">
+            <Swiper 
+                loop={true}
+            navigation={{
+                prevEl: `.HomeSlidePrev`,
+                nextEl: `.HomeSlideNext`,
+            }} modules={[Navigation ,Pagination]} className="mySwiper w-[90%] relative h-full">
+            <div>
+                <button className='HomeSlidePrev text-primaryMain absolute top-1/2 -left-0 -translate-y-1/2  z-10 hover:bg-primary-main hover:text-white text-sm p-2 rounded-full border border-primary-main text-primary-main'><FaArrowLeft /></button>
+                <button className='HomeSlideNext text-primaryMain absolute top-1/2 right-0 -translate-y-1/2  z-10 hover:bg-primary-main hover:text-white text-sm p-2 rounded-full border border-primary-main text-primary-main'><FaArrowRight /></button> 
+                </div>
+                <SwiperSlide>
+                    <div className="h-40 relative w-full rounded-md overflow-hidden shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)]">
+                        <Image src="/Home-Images/11.png" alt="No Preview" fill className="object-cover" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="h-40 relative w-full rounded-md overflow-hidden shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)]">
+                        <Image src="/Home-Images/12.png" alt="No Preview" fill className="object-cover" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="h-40 relative w-full rounded-md overflow-hidden shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)]">
+                        <Image src="/Home-Images/13.png" alt="No Preview" fill className="object-cover" />
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+
+        </div>
         <div>
         <section className={`md:pt-20 pt-10 px-5 max-w-6xl mx-auto ${poppins}`}>
-            <div className="bg-white py-4 md:px-6 rounded-xl shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)] flex  justify-between items-center">
-            <div className="text-center md:w-[25vw] w-[30vw]">
-                <p className="md:text-[2.5rem] text-2xl font-medium text-primary-main">72%</p>
-                <p className="md:text-lg sm:text-base text-xs text-primary-main">{`Increase restaurant's organic reach`}</p>
+            <div className="bg-white py-4 md:px-6 rounded-xl shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)] md:flex justify-between items-center ">
+            <div className="text-center md:w-[25vw] w-full md:px-0 px-6">
+                <p className="md:text-[2.5rem] sm:text-2xl text-lg font-medium text-primary-main">72%</p>
+                <p className="md:text-lg sm:text-base text-sm text-primary-main ">{`Increase restaurant's organic reach`}</p>
             </div>
-            <div className="border-l-2 h-16 border-l-primary-main inline "></div>
-            <div className="text-center md:w-[25vw] w-[30vw]">
-                <p className="md:text-[2.5rem] text-2xl font-medium text-primary-main">100%</p>
-                <p className="md:text-lg sm:text-base text-xs text-primary-main">Safe And Hygiene</p>
+            <div className="border-l-2 h-16 border-l-primary-main md:inline hidden"></div>
+            <div className="text-center md:w-[25vw] w-full max-md:my-6">
+                <p className="md:text-[2.5rem] sm:text-2xl text-lg font-medium text-primary-main">100%</p>
+                <p className="md:text-lg sm:text-base text-sm text-primary-main">Safe And Hygiene</p>
             </div>
-            <div className="border-l-2 h-16 border-l-primary-main inline "></div>
-            <div className="text-center md:w-[25vw] w-[30vw]">
-                <p className="md:text-[2.5rem] text-2xl font-medium text-primary-main">7k+</p>
-                <p className="md:text-lg sm:text-base text-xs text-primary-main">Affiliated RESTAURANTS</p>
+            <div className="border-l-2 h-16 border-l-primary-main md:inline hidden"></div>
+            <div className="text-center md:w-[25vw] w-full">
+                <p className="md:text-[2.5rem] sm:text-2xl text-lg font-medium text-primary-main">7k+</p>
+                <p className="md:text-lg sm:text-base text-sm text-primary-main">Affiliated RESTAURANTS</p>
             </div>
             </div>
         </section>
