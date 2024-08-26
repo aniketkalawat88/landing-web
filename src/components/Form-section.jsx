@@ -90,7 +90,7 @@ const FormSection = () => {
         </button>
       </form>
       <div className="h-full w-full">
-        <div className="md:h-[18vw] h-40 w-[80%] relative ">
+        <div className="md:h-[18vw] w-[80%] relative ">
           <Image src="/Home-Images/08.png" alt="No Preview" fill className="object-contain" />
         </div>
         <div className="grid justify-center space-y-4 mt-5">
