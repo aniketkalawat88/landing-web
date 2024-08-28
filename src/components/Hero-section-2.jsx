@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { volkhvo } from "@/styles/font";
@@ -7,14 +7,19 @@ import FormPopup from "./FormPopup";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 // Import Swiper styles
 
 import "swiper/css";
 import "swiper/css/navigation";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import CountUp from "react-countup";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,7 +27,16 @@ const poppins = Poppins({
 });
 
 const HeroSectionTwo = () => {
+  const [countStart, setCountStart] = useState(false);
 
+  useEffect(() => {
+    ScrollTrigger.create({
+      trigger: ".countup-section",
+      start: "top 20%",
+      onEnter: () => setCountStart(true),
+      onLeaveBack: () => setCountStart(false),
+    });
+  }, []);
 
   return (
     <div className="w-full">
@@ -108,14 +122,14 @@ const HeroSectionTwo = () => {
           <div className="bg-white py-4 md:px-6 rounded-xl shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)] md:flex justify-between items-center ">
             <div className="text-center md:w-[25vw] w-full md:px-0 px-6">
               <p className="md:text-[2.5rem] sm:text-2xl text-lg font-medium text-primary-main">
-                72%
+                {countStart ? <CountUp end={72} duration={5} /> : 72}%
               </p>
               <p className="md:text-lg sm:text-base text-sm text-primary-main ">{`Increase restaurant's organic reach`}</p>
             </div>
             <div className="border-l-2 h-16 border-l-primary-main md:inline hidden"></div>
             <div className="text-center md:w-[25vw] w-full max-md:my-6">
               <p className="md:text-[2.5rem] sm:text-2xl text-lg font-medium text-primary-main">
-                100%
+                {countStart ? <CountUp end={100} duration={5} /> : 100}%
               </p>
               <p className="md:text-lg sm:text-base text-sm text-primary-main">
                 Safe And Hygiene
@@ -124,7 +138,7 @@ const HeroSectionTwo = () => {
             <div className="border-l-2 h-16 border-l-primary-main md:inline hidden"></div>
             <div className="text-center md:w-[25vw] w-full">
               <p className="md:text-[2.5rem] sm:text-2xl text-lg font-medium text-primary-main">
-                7k+
+                {countStart ? <CountUp end={7} duration={5} /> : 7}k+
               </p>
               <p className="md:text-lg sm:text-base text-sm text-primary-main">
                 Affiliated RESTAURANTS
