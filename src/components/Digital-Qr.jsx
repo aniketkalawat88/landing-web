@@ -1,12 +1,45 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 import FAQ from './FAQ'
 import { Plusjakartasans, volkhvo } from '@/styles/font'
 import PeopleSay from './People-say'
 
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
 const DigitalQr = () => {
+
+    const ref = useRef();
+
+    useGSAP(
+      () => {
+        gsap.utils.toArray(".animate-text").forEach((element, index) => {
+          gsap.fromTo(
+            element,
+            { opacity: 0, y: 50 }, // Starting properties
+            {
+              opacity: 1,
+              y: 0,
+              scrollTrigger: {
+                trigger: element,
+                start: "top center",
+                end: "bottom center",
+                scrub: 1,
+              },
+            }
+          );
+        });
+      },
+      { scope: ref }
+    );
+
+    
   return (
-    <div id="benefits" className="py-10 max-w-7xl mx-auto relative">
+    <div id="benefits" ref={ref} className="py-10 max-w-7xl mx-auto relative">
         <div className="h-[50%] w-full bg-primary-main/5 absolute -z-10" style={{filter:'blur(250px)'}} />
        <h1 className={`xl:text-5xl md:text-3xl text-2xl  sm:px-0 px-1 font-bold text-center max-w-4xl mx-auto leading-tight ${volkhvo.className}`}>World&apos;s most advanced <span className="text-primary-main"> digital QR </span> menu features</h1>
        <div className="grid md:grid-cols-2">
@@ -16,25 +49,25 @@ const DigitalQr = () => {
                 </div>
             </div>
             <div className="grid md:gap-10 sm:gap-6 gap-4 md:my-10 xl:px-0 px-6">
-                <div>
-                    <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Improve the Customer Experience</li>
+                <div className='animate-text'>
+                    <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238] ">Improve the Customer Experience</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">With QR code menus that offer ordering capabilities, guests can order as soon as they’re seated.</p>
                 </div>
-                <div>
+                <div className='animate-text'>
                     <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Increase Revenue</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">QR code menus offer excellent upselling and cross-selling opportunities.
                     </p>
                 </div>
-                <div>
+                <div className='animate-text'>
                     <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Save money on printing costs</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">Digital QR menus are more cost-effective than print menus. Changes can be made instantly without additional printing costs.</p>
                 </div>  
-                <div>
+                <div className='animate-text'>
                     <li className="md:text-3xl sm:text-2xl text-xl font-semibold text-[#263238]">Build a community!</li>
                     <p className="md:text-xl sm:text-base text-sm text-[#666666] md:mt-4">Collect valuable data from WhatsApp and supercharge your Sales by sending offers on WhatsApp.
                     </p>
                 </div>
-                <div>
+                <div className='animate-text'>
                     <button className={`bg-primary-main text-white p-2 rounded-md font-medium px-4 text-2xl  ${Plusjakartasans.className}`}>Let’s do it !</button>
                     <p className={`text-primary-main my-4 lowercase ${Plusjakartasans.className}`}>100% FREE DEMO - NO CREDIT CARD REQUIRED</p>
                 </div>
