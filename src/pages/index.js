@@ -14,7 +14,7 @@ export default function Home() {
     <main className={` ${poppins.className}`} >
      <Navbar />
      <HeroSection />
-      <Link href={`https://api.whatsapp.com/send?phone=9754318246&text=hello%20smart%20digital`} target='_blank' className="fixed text-4xl right-[5vw] "><ImWhatsapp className="text-green-500" /></Link>
+      <Link href={`https://api.whatsapp.com/send?phone=9754318246&text=hello%20smart%20digital`} target='_blank' className="fixed text-4xl right-[5vw] bottom-[5vw]"><ImWhatsapp className="text-green-500" /></Link>
      <HeroSectionTwo />
      <DigitalMenu />
      <DigitalQr />
