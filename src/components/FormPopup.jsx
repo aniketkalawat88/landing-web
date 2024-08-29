@@ -7,13 +7,15 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const FormPopup = ({name}) => {
   const date = new Date();
+  // console.log(date.toDateString())
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     restaurant: "",
     email: "",
     phone: "",
-    date:date.toDateString()
+    date:"",
+    time: ""
   });
   
   const toggleModal = () => {
@@ -30,7 +32,8 @@ const FormPopup = ({name}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    formData.date = new Date().toLocaleDateString()
+    formData.date = new Date().toDateString()
+    formData.time = new Date().toLocaleTimeString();
     try {
       const response = await axios.post('https://sheetdb.io/api/v1/z36e84ew6zby0', {
         data: formData
@@ -47,7 +50,8 @@ const FormPopup = ({name}) => {
       restaurant: "",
       email: "",
       phone: "",
-      date:date.toLocaleDateString()
+      date:date.toDateString(),
+      time:date.toLocaleTimeString()
     })
   };
 

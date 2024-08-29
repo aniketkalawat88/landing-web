@@ -55,7 +55,7 @@ const Navbar = () => {
           />
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center gap-4">
-          <Link href="tel:6264755339" className="flex gap-1 text-primary-main items-center font-normal text-sm max-sm:hidden"><PiPhoneCallThin className="text-2xl" /> +91 6264755339</Link>
+          <Link href="tel:9340534177" className="flex gap-1 text-primary-main items-center font-normal text-sm max-sm:hidden"><PiPhoneCallThin className="text-2xl" /> +91 9340534177</Link>
           <div
             className="block text-white bg-primary-main hover:bg-primary-main/80 focus:ring-4 focus:outline-none focus:ring-primary-main font-medium rounded-lg text-sm md:px-5 px-2 md:py-2.5 py-1.5 text-center dark:bg-primary-main dark:hover:bg-primary-main/80 dark:focus:ring-primary-main"
           >

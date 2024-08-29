@@ -16,7 +16,8 @@ const FormSection = () => {
     restaurant: "",
     email: "",
     phone: "",
-    date:''
+    date:'',
+    time:''
   });
 
   const handleChange = (e) => {
@@ -29,8 +30,9 @@ const FormSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    formData.date = new Date().toLocaleDateString();
-    console.log(formData);
+    formData.date = new Date().toDateString();
+    formData.time = new Date().toLocaleTimeString();
+    console.log(formData)
     try {
       const response = await axios.post('https://sheetdb.io/api/v1/z36e84ew6zby0', {
         data: formData
@@ -46,7 +48,7 @@ const FormSection = () => {
       restaurant: "",
       email: "",
       phone: "",
-      date:new Date().toLocaleDateString()
+      date:new Date().toDateString()
     })
   };
   return (
@@ -104,7 +106,7 @@ const FormSection = () => {
           </div>
           <div className="flex items-center gap-4">
             <PiPhoneCallLight className="text-primary-main text-xl" />
-            <Link href="tel:6264755339" className="text-[#222222]">+91 6264755339</Link>
+            <Link href="tel:9340534177" className="text-[#222222]">+91 9340534177</Link>
           </div>
           <div className="flex items-center gap-4">
             <MdOutlineEmail className="text-primary-main text-xl" />
