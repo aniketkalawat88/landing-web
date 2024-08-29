@@ -6,12 +6,14 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const FormPopup = ({name}) => {
+  const date = new Date();
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     restaurant: "",
     email: "",
-    phone: ""
+    phone: "",
+    date:date.toDateString()
   });
   
   const toggleModal = () => {
@@ -28,7 +30,7 @@ const FormPopup = ({name}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    formData.date = new Date().toLocaleDateString()
     try {
       const response = await axios.post('https://sheetdb.io/api/v1/z36e84ew6zby0', {
         data: formData
@@ -44,7 +46,8 @@ const FormPopup = ({name}) => {
       name: "",
       restaurant: "",
       email: "",
-      phone: ""
+      phone: "",
+      date:date.toLocaleDateString()
     })
   };
 
@@ -169,6 +172,7 @@ const FormPopup = ({name}) => {
                     required
                   />
                 </div>
+          
                 <button
                   type="submit"
                   className="w-full text-white bg-primary-main hover:bg-primary-main focus:ring-4 focus:outline-none focus:ring-primary-main font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-main dark:hover:bg-primary-main dark:focus:ring-primary-main"

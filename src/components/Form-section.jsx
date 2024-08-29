@@ -8,13 +8,15 @@ import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import Link from 'next/link';
 
 const FormSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     restaurant: "",
     email: "",
-    phone: ""
+    phone: "",
+    date:''
   });
 
   const handleChange = (e) => {
@@ -27,6 +29,7 @@ const FormSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    formData.date = new Date().toLocaleDateString();
     console.log(formData);
     try {
       const response = await axios.post('https://sheetdb.io/api/v1/z36e84ew6zby0', {
@@ -42,7 +45,8 @@ const FormSection = () => {
       name: "",
       restaurant: "",
       email: "",
-      phone: ""
+      phone: "",
+      date:new Date().toLocaleDateString()
     })
   };
   return (
@@ -100,11 +104,11 @@ const FormSection = () => {
           </div>
           <div className="flex items-center gap-4">
             <PiPhoneCallLight className="text-primary-main text-xl" />
-            <p className="text-[#222222]">+91 6264755339</p>
+            <Link href="tel:6264755339" className="text-[#222222]">+91 6264755339</Link>
           </div>
           <div className="flex items-center gap-4">
             <MdOutlineEmail className="text-primary-main text-xl" />
-            <p className="text-[#222222] ">digitalqrmenu@igrowmybiz.com</p>
+            <Link href="mailto:digitalqrmenu@igrowmybiz.com" className="text-[#222222] ">digitalqrmenu@igrowmybiz.com</Link>
           </div>
 
         </div>
